@@ -1,0 +1,185 @@
+
+:root {
+    --blue: #155eef;
+    --blue-dark: #123eaa;
+    --blue-light: #eff6ff;
+    --text: #182230;
+    --muted: #667085;
+    --border: #e4e7ec;
+    --white: #ffffff;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: var(--white);
+  }
+  
+  a { color: var(--blue); text-decoration: none; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  .container { width: min(1120px, 92%); margin-inline: auto; }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255,255,255,.96);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .navbar {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-weight: 800;
+  }
+  
+  .brand small { display: block; color: var(--muted); font-size: 11px; font-weight: 500; }
+  .brand-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    color: white;
+    background: var(--blue);
+    border-radius: 12px;
+    font-size: 22px;
+  }
+  
+  .nav-links { display: flex; align-items: center; gap: 25px; }
+  .nav-links a { color: #344054; font-size: 14px; font-weight: 600; }
+  .nav-links a:hover, .service-link:hover { color: var(--blue); }
+  .nav-links .nav-cta { color: white; background: var(--blue); padding: 11px 16px; border-radius: 9px; }
+  .menu-toggle { display: none; font-size: 25px; border: 0; background: none; cursor: pointer; }
+  
+  .hero {
+    background: linear-gradient(120deg, #f8fbff, #eaf2ff);
+    overflow: hidden;
+  }
+  
+  .hero-grid {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+    gap: 45px;
+    padding-block: 65px;
+  }
+  
+  .eyebrow {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+  }
+  
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.12; letter-spacing: -1.8px; margin: 18px 0; }
+  h1 span { color: var(--blue); }
+  .hero-content > p, .section-heading > p, .price-grid > div > p { color: var(--muted); max-width: 540px; }
+  .hero-content > p { font-size: 17px; }
+  
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 18px; }
+  .button { display: inline-flex; align-items: center; justify-content: center; padding: 13px 19px; border-radius: 9px; font-weight: 700; font-size: 14px; }
+  .button-primary { background: var(--blue); color: white; }
+  .button-primary:hover, .nav-links .nav-cta:hover { background: var(--blue-dark); }
+  .button-outline { border: 1px solid #cbd5e1; color: var(--text); background: white; }
+  .trust-note { color: #475467; font-size: 13px; }
+  
+  .hero-visual { position: relative; min-height: 330px; display: grid; place-items: center; }
+  .visual-circle { position: absolute; width: 300px; height: 300px; background: #d6e5ff; border-radius: 50%; }
+  .paper {
+    z-index: 1; width: 220px; min-height: 260px; background: white;
+    border-radius: 10px; padding: 28px 23px;
+    box-shadow: 0 20px 55px #155eef20; transform: rotate(4deg);
+  }
+  .paper-logo { color: var(--blue); font-size: 10px; font-weight: 800; margin-bottom: 25px; }
+  .paper-line { height: 7px; width: 78%; background: #e5eaf2; border-radius: 5px; margin-bottom: 12px; }
+  .paper-line.wide { width: 100%; }
+  .paper-line.short { width: 50%; }
+  .paper-box { background: var(--blue-light); color: var(--blue); font-size: 10px; font-weight: 800; padding: 12px 8px; margin: 20px 0; }
+  .floating-card { position: absolute; z-index: 2; right: 0; bottom: 28px; background: white; padding: 13px 17px; border-radius: 12px; box-shadow: 0 8px 25px #10182815; color: #12a76b; font-weight: 800; }
+  .floating-card span { color: var(--text); font-size: 13px; margin-left: 5px; }
+  
+  .section { padding-block: 75px; }
+  .section-heading { text-align: center; margin-bottom: 38px; }
+  .section-heading h2, .price-grid h2, .cta-inner h2 { font-size: clamp(27px, 4vw, 36px); letter-spacing: -.8px; line-height: 1.2; margin: 12px 0; }
+  .section-heading p { margin-inline: auto; }
+  
+  .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .service-card { border: 1px solid var(--border); padding: 25px; border-radius: 15px; transition: transform .2s, box-shadow .2s; }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px #1018280c; }
+  .service-icon { display: inline-grid; place-items: center; width: 48px; height: 48px; background: var(--blue-light); border-radius: 12px; font-size: 23px; }
+  .service-card h3 { font-size: 19px; margin: 18px 0 8px; }
+  .service-card p { min-height: 48px; font-size: 14px; color: var(--muted); }
+  .service-price { display: block; font-weight: 800; font-size: 14px; margin: 16px 0; }
+  .service-link { font-size: 14px; font-weight: 800; }
+  .fine-print { color: var(--muted); font-size: 12px; margin-top: 22px; }
+  
+  .price-section { background: #f8fafc; padding-block: 70px; }
+  .price-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start; }
+  .price-list { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 12px 24px; }
+  .price-list > div { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .price-list strong { white-space: nowrap; }
+  
+  .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .contact-card { border: 1px solid var(--border); border-radius: 14px; padding: 25px; }
+  .contact-icon { font-size: 25px; }
+  .contact-card h3 { margin: 15px 0 7px; }
+  .contact-card p { color: var(--muted); font-size: 14px; min-height: 44px; overflow-wrap: anywhere; }
+  .contact-card a { font-size: 14px; font-weight: 700; }
+  
+  .cta-section { background: var(--blue); color: white; padding-block: 42px; }
+  .cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+  .cta-inner h2 { margin-bottom: 8px; }
+  .cta-inner p { margin-bottom: 0; color: #e0eaff; }
+  .button-light { background: white; color: var(--blue); white-space: nowrap; }
+  .footer { background: #101828; color: #d0d5dd; padding-block: 22px; font-size: 12px; }
+  .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
+  .footer p { margin: 0; }
+  .floating-whatsapp { position: fixed; bottom: 22px; right: 22px; z-index: 8; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; color: white; background: #16a765; font-size: 28px; box-shadow: 0 5px 20px #10182825; }
+  
+  a:focus-visible, button:focus-visible { outline: 3px solid #84adff; outline-offset: 3px; }
+  
+  @media (max-width: 800px) {
+    .menu-toggle { display: block; }
+    .nav-links { display: none; position: absolute; top: 76px; left: 0; right: 0; padding: 20px 4%; background: white; border-bottom: 1px solid var(--border); flex-direction: column; align-items: stretch; gap: 18px; }
+    .nav-links.open { display: flex; }
+    .nav-links .nav-cta { text-align: center; }
+    .hero-grid { grid-template-columns: 1fr; gap: 15px; padding-block: 55px 30px; }
+    .hero-visual { min-height: 300px; }
+    .service-grid { grid-template-columns: repeat(2, 1fr); }
+    .price-grid { grid-template-columns: 1fr; gap: 25px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-card p { min-height: 0; }
+  }
+  
+  @media (max-width: 500px) {
+    .service-grid { grid-template-columns: 1fr; }
+    .service-card p { min-height: 0; }
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .hero-actions .button { width: 100%; }
+    .floating-card { right: -4px; }
+    .price-list { padding-inline: 15px; }
+    .price-list > div { font-size: 12px; }
+    .cta-inner, .footer-inner { flex-direction: column; align-items: flex-start; }
+  }
+  
