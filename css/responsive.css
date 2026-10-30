@@ -1,0 +1,51 @@
+/* responsive.css - mobile-first adjustments. Base styles in style.css are already single-column friendly. */
+
+/* Very small phones (320px) */
+@media (max-width: 359px) {
+  .brand-text small { display: none; }
+  .hero-actions .btn { width: 100%; }
+  .container { --bs-gutter-x: 1.5rem; }
+}
+
+/* Phones */
+@media (max-width: 575.98px) {
+  .hero-actions .btn { width: 100%; }
+  .filter-chip { flex: 1 1 auto; text-align: center; }
+  .rate-card { padding: 1rem; }
+  .fab-whatsapp, .back-to-top { right: .75rem; }
+  .footer-bottom { flex-direction: column; }
+}
+
+/* Collapsed mobile menu */
+@media (max-width: 991.98px) {
+  .navbar-collapse { padding: .75rem 0 1rem; }
+  .navbar-nav { gap: .15rem; }
+  .nav-link { padding: .8rem .5rem !important; }
+  .nav-link.active::after { left: .5rem; right: auto; width: 2.25rem; bottom: .45rem; }
+  .nav-cta { margin: .75rem 0 0; width: 100%; }
+}
+
+/* Pricing table turns into stacked cards on narrow screens */
+@media (max-width: 767.98px) {
+  .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+  .pricing-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .pricing-table { border: 0; background: transparent; }
+  .pricing-table tr { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-medium); margin-bottom: 1rem; padding: .5rem 0; }
+  .pricing-table td { display: flex; justify-content: space-between; gap: 1rem; border: 0; padding: .45rem 1rem; text-align: right; }
+  .pricing-table td::before { content: attr(data-label); font-weight: 600; color: var(--color-muted); text-align: left; flex: none; }
+  .pricing-table td[data-label="Service"] { font-size: 1rem; }
+  .price-value { white-space: normal; }
+}
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  .hero-figure { max-width: 520px; margin-left: auto; }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .hero-inner { padding-block: 5.5rem; }
+}
+@media (min-width: 1800px) {
+  html { font-size: 17px; }
+}
