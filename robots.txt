@@ -1,0 +1,7 @@
+# Allow all crawlers.
+User-agent: *
+Allow: /
+
+# After deploying, replace the line below with your real address, e.g.
+# Sitemap: https://username.github.io/repository-name/sitemap.xml
+Sitemap: https://USERNAME.github.io/REPOSITORY-NAME/sitemap.xml

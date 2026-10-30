@@ -1,186 +1,203 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#155eef">
-  <meta name="description" content="Printing, photocopying, online form assistance, PAN services and document services at your local cyber cafe.">
-  <title>Public Cyber Point | Digital & Printing Services</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="theme-color" content="#0b2744">
+  <title>Public Cyber Point | Printing, Scanning and Online Services in Sakri, Darbhanga</title>
+  <meta name="description" content="Public Cyber Point is a local cyber cafe in Sakri, Darbhanga for printing, photocopying, scanning, documentation and online application help.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Public Cyber Point | Your Trusted Digital Service Center">
+  <meta property="og:description" content="Printing, scanning, documentation and online application help in Sakri, Darbhanga.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/validation.js" defer></script>
+  <script src="js/contact.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="brand" href="#home">
-        <span class="brand-icon">D</span>
-        <span>Public Cyber Point<small>Digital & Print Services</small></span>
-      </a>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"><noscript><p class="p-3 mb-0">Navigation needs JavaScript. Go to <a href="services.html">Services</a>, <a href="pricing.html">Pricing</a>, <a href="about.html">About</a> or <a href="contact.html">Contact</a>.</p></noscript></div>
 
-      <button class="menu-toggle" id="menuToggle"
-        aria-label="Toggle navigation" aria-expanded="false"
-        aria-controls="navLinks">☰</button>
-
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#prices">Prices</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta whatsapp-link" href="#">WhatsApp Us ↗</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">YOUR LOCAL DIGITAL SERVICE CENTRE</span>
-          <h1>All your document needs, <span>in one place.</span></h1>
-          <p>Printing, photocopying, online form assistance and document services made simple, convenient and reliable.</p>
-          <div class="hero-actions">
-            <a class="button button-primary whatsapp-link" href="#">Enquire on WhatsApp ↗</a>
-            <a class="button button-outline" href="#services">Explore Services ↓</a>
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-md-7 hero-copy">
+            <h1 id="hero-title">Your One-Stop Destination for Digital Services</h1>
+            <p class="hero-lead">Fast, reliable and affordable computer, printing, documentation and online services &mdash; all in one convenient place.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="services.html">Explore Our Services</a>
+              <a class="btn btn-whatsapp btn-lg" data-whatsapp href="contact.html"><i class="bi bi-whatsapp" aria-hidden="true"></i> Contact Us on WhatsApp</a>
+            </div>
+            <ul class="hero-meta">
+              <li data-row><i class="bi bi-clock" aria-hidden="true"></i><span data-bind="hours"></span></li>
+              <li data-row><i class="bi bi-geo-alt" aria-hidden="true"></i><span data-bind="address"></span></li>
+            </ul>
           </div>
-          <div class="trust-note">✓ Friendly assistance &nbsp; ✓ Clear pricing</div>
-        </div>
-
-        <div class="hero-visual" aria-label="Illustration of a document and printer">
-          <div class="visual-circle"></div>
-          <div class="paper">
-            <div class="paper-logo">Public Cyber Point</div>
-            <div class="paper-line wide"></div>
-            <div class="paper-line"></div>
-            <div class="paper-line short"></div>
-            <div class="paper-box">DOCUMENT SERVICES</div>
-            <div class="paper-line wide"></div>
-            <div class="paper-line"></div>
+          <div class="col-md-5">
+            <figure class="hero-figure">
+              <img id="heroImg" src="assets/images/hero.webp" width="1200" height="900" fetchpriority="high" alt="Sample image: a computer workstation and printer. Replace with a photo of your shop.">
+              <span class="sample-badge" id="heroSample">Sample image</span>
+            </figure>
           </div>
-          <div class="floating-card">✓ <span>Print. Scan. Done.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="services">
-      <div class="section-heading">
-        <span class="eyebrow">WHAT WE OFFER</span>
-        <h2>Services for your everyday needs</h2>
-        <p>Convenient document and digital assistance close to home.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-icon">🖨️</span>
-          <h3>Printing</h3>
-          <p>Black-and-white and colour document printing.</p>
-          <span class="service-price">From ₹2 / page</span>
-          <a class="service-link whatsapp-link" data-service="Printing" href="#">Enquire ↗</a>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">📄</span>
-          <h3>Photocopying</h3>
-          <p>Quick copies of your everyday documents.</p>
-          <span class="service-price">From ₹2 / page</span>
-          <a class="service-link whatsapp-link" data-service="Photocopying" href="#">Enquire ↗</a>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">💻</span>
-          <h3>Online Forms</h3>
-          <p>Assistance with eligible applications and registrations.</p>
-          <span class="service-price">From ₹50 / form</span>
-          <a class="service-link whatsapp-link" data-service="Online forms" href="#">Enquire ↗</a>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">🪪</span>
-          <h3>PAN Assistance</h3>
-          <p>Help with PAN applications through authorized channels.</p>
-          <span class="service-price">Ask for pricing</span>
-          <a class="service-link whatsapp-link" data-service="PAN assistance" href="#">Enquire ↗</a>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">📑</span>
-          <h3>Lamination</h3>
-          <p>Protect important documents and certificates.</p>
-          <span class="service-price">From ₹25 / sheet</span>
-          <a class="service-link whatsapp-link" data-service="Lamination" href="#">Enquire ↗</a>
-        </article>
-        <article class="service-card">
-          <span class="service-icon">📚</span>
-          <h3>Binding</h3>
-          <p>Neat document finishing for projects and reports.</p>
-          <span class="service-price">Ask for pricing</span>
-          <a class="service-link whatsapp-link" data-service="Binding" href="#">Enquire ↗</a>
-        </article>
-      </div>
-      <p class="fine-print">Prices are indicative starting prices, not guaranteed rates. Final charges depend on document type, quantity, materials and applicable portal fees.</p>
-    </section>
-
-    <section class="price-section" id="prices">
-      <div class="container price-grid">
-        <div>
-          <span class="eyebrow">SIMPLE & TRANSPARENT</span>
-          <h2>Our starting prices</h2>
-          <p>Contact us to confirm the final price before placing your order.</p>
-        </div>
-        <div class="price-list">
-          <div><span>Black-and-white printing</span><strong>₹2 / page*</strong></div>
-          <div><span>Colour printing</span><strong>₹10 / page*</strong></div>
-          <div><span>Photocopying</span><strong>₹2 / page*</strong></div>
-          <div><span>Online form assistance</span><strong>From ₹50*</strong></div>
-          <div><span>Lamination</span><strong>From ₹25*</strong></div>
-          <p class="fine-print">*Indicative prices. Confirm local rates and material costs. Government or examination fees, if any, are additional.</p>
+    <!-- Benefits -->
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="visually-hidden">Why visit us</h2>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg"><div class="benefit"><span class="benefit-icon"><i class="bi bi-headset" aria-hidden="true"></i></span><div><h3>Friendly support</h3><p>Ask questions at the counter or on WhatsApp.</p></div></div></div>
+          <div class="col-sm-6 col-lg"><div class="benefit"><span class="benefit-icon"><i class="bi bi-laptop" aria-hidden="true"></i></span><div><h3>Digital services</h3><p>Computers, internet and online help in one place.</p></div></div></div>
+          <div class="col-sm-6 col-lg"><div class="benefit"><span class="benefit-icon"><i class="bi bi-currency-rupee" aria-hidden="true"></i></span><div><h3>Clear pricing</h3><p>We confirm the price before we start.</p></div></div></div>
+          <div class="col-sm-6 col-lg"><div class="benefit"><span class="benefit-icon"><i class="bi bi-printer" aria-hidden="true"></i></span><div><h3>Print and paperwork</h3><p>Printing, copies, scanning and documents.</p></div></div></div>
+          <div class="col-sm-6 col-lg"><div class="benefit"><span class="benefit-icon"><i class="bi bi-pin-map" aria-hidden="true"></i></span><div><h3>Local access</h3><p>Close to home in Sakri, Darbhanga.</p></div></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="contact">
-      <div class="section-heading">
-        <span class="eyebrow">GET IN TOUCH</span>
-        <h2>We're here to help</h2>
-        <p>Contact us to check availability, prices or service details.</p>
+    <!-- Popular services -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head center">
+          <h2 id="services-title">Popular services</h2>
+          <p>Printing, documents and online help for everyday needs.</p>
+        </div>
+        <div class="service-grid" id="featuredServices"></div>
+        <div class="text-center mt-4"><a class="btn btn-primary" href="services.html">See all services</a></div>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <span class="contact-icon">📍</span>
-          <h3>Visit our shop</h3>
-          <p id="shopAddress">Add your shop address in script.js</p>
-          <a id="mapsLink" href="#" target="_blank" rel="noopener noreferrer">Get directions ↗</a>
-        </div>
-        <div class="contact-card">
-          <span class="contact-icon">📞</span>
-          <h3>Call us</h3>
-          <p id="shopPhone">Add your phone number in script.js</p>
-          <a id="callLink" href="#">Call now ↗</a>
-        </div>
-        <div class="contact-card">
-          <span class="contact-icon">🕒</span>
-          <h3>Opening hours</h3>
-          <p id="shopHours">Add your opening hours in script.js</p>
-          <a class="whatsapp-link" href="#">Ask us on WhatsApp ↗</a>
+    </section>
+
+    <!-- Why choose us + how it works -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <h2 id="why-title" class="mb-3">Why choose us</h2>
+            <ul class="check-list">
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>We explain what is needed and what it will cost before starting.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>You can ask about a service on WhatsApp before you travel.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Printing, scanning and online help are handled in one visit.</span></li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>We never need your passwords or OTPs. Keep them private.</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="mb-3" id="how-title">How it works</h2>
+            <ol class="steps" aria-labelledby="how-title">
+              <li class="reveal"><h3>Choose a service</h3><p>Browse what we offer.</p></li>
+              <li class="reveal"><h3>Contact or visit</h3><p>Message, call or come to the shop.</p></li>
+              <li class="reveal"><h3>Confirm price</h3><p>We confirm availability and cost.</p></li>
+              <li class="reveal"><h3>Get help</h3><p>We assist you with the work.</p></li>
+            </ol>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="container cta-inner">
-        <div>
-          <h2>Need help with a document?</h2>
-          <p>Message us to ask about our services and prices.</p>
+    <!-- Pricing preview -->
+    <section class="section section-alt" aria-labelledby="pricing-title" id="pricePreviewWrap">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 id="pricing-title" class="mb-3">Pricing preview</h2>
+            <p class="text-secondary">A quick look at selected services. Final prices are confirmed with you before work starts.</p>
+            <div class="notice mb-3" id="priceDemoNote"><i class="bi bi-info-circle" aria-hidden="true"></i><span><strong>Demonstration prices.</strong> These sample figures are not the shop's confirmed rates.</span></div>
+            <a class="btn btn-primary" href="pricing.html">View all pricing</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="rate-card"><h3>Rate card</h3><ul class="rate-list" id="pricePreview"></ul></div>
+          </div>
         </div>
-        <a class="button button-light whatsapp-link" href="#">Chat on WhatsApp ↗</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallerySection" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="gallery-title">Our space</h2>
+          <p>Workstations, equipment and facilities.</p>
+        </div>
+        <div class="notice notice-info mb-4" id="galleryNote"><i class="bi bi-image" aria-hidden="true"></i><span>These are sample images used for layout. They are not photographs of this business.</span></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalCaption" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content">
+        <div class="modal-header"><h2 class="modal-title h6" id="galleryModalCaption">Gallery image</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body"><img id="galleryModalImg" src="assets/images/gallery/workstations.webp" alt="" width="800" height="600"></div>
+      </div></div>
+    </div>
+
+    <!-- Testimonials: hidden unless real testimonials are added in config.js -->
+    <section class="section section-alt" id="testimonialsSection" aria-labelledby="testimonials-title" hidden>
+      <div class="container">
+        <div class="section-head"><h2 id="testimonials-title">What customers say</h2></div>
+        <div class="row g-4" id="testimonialGrid"></div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section" id="location" aria-labelledby="location-title">
+      <div class="container">
+        <div class="section-head"><h2 id="location-title">Find us</h2><p>Visit the shop or ask us anything before you travel.</p></div>
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="card-panel h-100">
+              <ul class="info-list">
+                <li data-row><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong>Address</strong><span data-bind="address"></span></div></li>
+                <li data-row><i class="bi bi-clock" aria-hidden="true"></i><div><strong>Opening hours</strong><span data-bind="hours"></span></div></li>
+                <li data-row><i class="bi bi-telephone" aria-hidden="true"></i><div><strong>Phone</strong><a data-link="call" href="contact.html"><span data-bind="phone"></span></a></div></li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <a class="btn btn-primary" data-link="directions" href="contact.html"><i class="bi bi-signpost-2" aria-hidden="true"></i> Get Directions</a>
+                <a class="btn btn-outline-primary" data-link="call" href="contact.html"><i class="bi bi-telephone" aria-hidden="true"></i> Call</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7"><div id="mapMount"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faqSection" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <div class="section-head center"><h2 id="faq-title">Frequently asked questions</h2></div>
+        <div class="accordion" id="faqAccordion"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <h2 id="contact-title" class="mb-3">Send an enquiry</h2>
+            <p class="text-secondary">Tell us what you need. Your message opens in WhatsApp for you to review and send.</p>
+            <p class="small text-secondary"><a href="contact.html#privacy">How we handle your details</a></p>
+          </div>
+          <div class="col-lg-7"><div class="card-panel" data-contact-form-mount></div></div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Public Cyber Point. All rights reserved.</p>
-      <p>Digital assistance, printing and document services.</p>
-    </div>
-  </footer>
-
-  <a class="floating-whatsapp whatsapp-link" href="#"
-    aria-label="Contact us on WhatsApp">✆</a>
+  <div id="site-footer"></div>
 </body>
 </html>

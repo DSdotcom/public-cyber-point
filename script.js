@@ -7,10 +7,10 @@
 
 const SHOP = {
     name: "Public Cyber Point",
-    whatsapp: "9122699496",
-    phone: "9122699496, 6299407914",
+    whatsapp: "99999999999",
+    phone: "9999999999",
     address: "Dahaura, Sakri, Darbhanga",
-    hours: "Monday–Saturday: 8:00 AM–8:00 PM",
+    hours: "Monday–Sunday: 8:00 AM–8:00 PM",
     mapsUrl: "https://maps.app.goo.gl/3Z7sDqz1J4w22PjX6"
   };
   

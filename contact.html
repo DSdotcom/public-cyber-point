@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="theme-color" content="#0b2744">
+  <title>Contact | Public Cyber Point, Sakri, Darbhanga</title>
+  <meta name="description" content="Call, message on WhatsApp or visit Public Cyber Point in Sakri, Darbhanga. Find opening hours, directions and an enquiry form.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Public Cyber Point, Sakri, Darbhanga">
+  <meta property="og:description" content="Call, message on WhatsApp or visit Public Cyber Point in Sakri, Darbhanga. Find opening hours, directions and an enquiry form.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/validation.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"><noscript><p class="p-3 mb-0">Navigation needs JavaScript. Go to <a href="index.html">Home</a>, <a href="services.html">Services</a>, <a href="pricing.html">Pricing</a>, <a href="about.html">About</a> or <a href="contact.html">Contact</a>.</p></noscript></div>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></nav>
+        <h1>Contact us</h1>
+        <p>Call, message on WhatsApp, or visit the shop.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="card-panel h-100">
+              <h2 class="h4 mb-3">Contact details</h2>
+              <ul class="info-list">
+                <li data-row><i class="bi bi-geo-alt" aria-hidden="true"></i><div><strong>Address</strong><span data-bind="address"></span></div></li>
+                <li data-row><i class="bi bi-telephone" aria-hidden="true"></i><div><strong>Phone</strong><a data-link="call" href="contact.html"><span data-bind="phone"></span></a></div></li>
+                <li data-row><i class="bi bi-envelope" aria-hidden="true"></i><div><strong>Email</strong><a data-link="email" href="contact.html"><span data-bind="email"></span></a></div></li>
+                <li data-row><i class="bi bi-clock" aria-hidden="true"></i><div><strong>Opening hours</strong><span data-bind="hours"></span></div></li>
+              </ul>
+              <div class="d-grid gap-2 mt-4">
+                <a class="btn btn-whatsapp" data-whatsapp href="contact.html"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+                <a class="btn btn-primary" data-link="call" href="contact.html"><i class="bi bi-telephone" aria-hidden="true"></i> Call now</a>
+                <a class="btn btn-outline-primary" data-link="directions" href="contact.html"><i class="bi bi-signpost-2" aria-hidden="true"></i> Get Directions</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card-panel">
+              <h2 class="h4 mb-3">Send an enquiry</h2>
+              <div class="notice mb-3"><i class="bi bi-shield-lock" aria-hidden="true"></i><span><strong>Protect your information.</strong> For online forms and applications, never share passwords, OTPs or identity documents unless you are completing the task yourself at the counter. Keep your login details private.</span></div>
+              <div data-contact-form-mount></div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4" id="mapMount"></div>
+      </div>
+    </section>
+    <section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="container container-narrow">
+        <h2 id="privacy-title" class="mb-3">Privacy information</h2>
+        <ul class="check-list">
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>This website has no tracking, advertising or analytics scripts and sets no cookies.</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>What you type in the enquiry form stays in your browser. It is not saved by this website.</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>The WhatsApp option only opens a chat with your message ready. You choose whether to send it, and WhatsApp's own privacy terms then apply.</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>If the shop owner turns on the optional email form, your details are sent to formsubmit.co only after you tick the consent box and press the button.</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Please do not share passwords, OTPs, bank details or identity document numbers through this site.</span></li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Fonts and icons load from Google Fonts and jsDelivr, so those services can see your IP address when the page loads.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

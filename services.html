@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="theme-color" content="#0b2744">
+  <title>Services | Public Cyber Point, Sakri, Darbhanga</title>
+  <meta name="description" content="Browse printing, photocopying, scanning, documentation and online assistance services at Public Cyber Point in Sakri, Darbhanga.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Public Cyber Point, Sakri, Darbhanga">
+  <meta property="og:description" content="Browse printing, photocopying, scanning, documentation and online assistance services at Public Cyber Point in Sakri, Darbhanga.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/services.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"><noscript><p class="p-3 mb-0">Navigation needs JavaScript. Go to <a href="index.html">Home</a>, <a href="services.html">Services</a>, <a href="pricing.html">Pricing</a>, <a href="about.html">About</a> or <a href="contact.html">Contact</a>.</p></noscript></div>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Services</span></nav>
+        <h1>Our services</h1>
+        <p>Printing, documents, computer access and online help. Search or pick a category.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="notice mb-4" id="sensitiveNotice"><i class="bi bi-shield-lock" aria-hidden="true"></i><span><strong>Protect your information.</strong> For online forms and applications, never share passwords, OTPs or identity documents unless you are completing the task yourself at the counter. Keep your login details private.</span></div>
+        <div class="toolbar"><div class="search-box"><label class="visually-hidden" for="serviceSearch">Search services</label><i class="bi bi-search" aria-hidden="true"></i><input class="form-control" id="serviceSearch" type="search" placeholder="Search services, e.g. printing" autocomplete="off" maxlength="60"></div></div>
+        <div class="chip-row" id="categoryFilters" role="group" aria-label="Filter by category"></div>
+        <p class="result-count" id="resultCount" role="status" aria-live="polite"></p>
+        <div class="service-grid" id="serviceGrid"></div>
+        <div class="empty-state" id="noResults" hidden><i class="bi bi-search" aria-hidden="true"></i><h2 class="h5 mt-2">No matching services</h2><p class="mx-auto text-secondary">Try a different word or clear the filters. You can also message us and we will tell you if we can help.</p><button type="button" class="btn btn-primary" id="resetFilters">Clear search and filters</button></div>
+      </div>
+    </section>
+    <section class="cta-band"><div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <div><h2>Not sure what you need?</h2><p>Message us and we will point you to the right service.</p></div>
+      <div class="d-flex flex-wrap gap-2"><a class="btn btn-light" data-whatsapp href="contact.html"><i class="bi bi-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a><a class="btn btn-ghost-light" href="index.html">Back to home</a></div>
+    </div></section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

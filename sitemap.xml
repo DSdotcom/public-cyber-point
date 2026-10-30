@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PLACEHOLDER ADDRESSES: replace every https://USERNAME.github.io/REPOSITORY-NAME/ with your real site URL
+  (the same value you set as siteUrl in js/config.js). Until then, do not submit this sitemap to search engines.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://USERNAME.github.io/REPOSITORY-NAME/</loc></url>
+  <url><loc>https://USERNAME.github.io/REPOSITORY-NAME/services.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPOSITORY-NAME/pricing.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPOSITORY-NAME/about.html</loc></url>
+  <url><loc>https://USERNAME.github.io/REPOSITORY-NAME/contact.html</loc></url>
+</urlset>
